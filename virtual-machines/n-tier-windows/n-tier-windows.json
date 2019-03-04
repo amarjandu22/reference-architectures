@@ -53,7 +53,7 @@
                         "namePrefix": "jb",
                         "size": "Standard_DS1_v2",
                         "adminUsername": "testadminuser",
-                        "adminPassword": "[replace-with-password]",
+                        "adminPassword": "P2ssw0rd1234",
                         "virtualNetwork": {
                             "name": "ra-ntier-vnet"
                         },
@@ -100,7 +100,7 @@
                         "osType": "windows",
                         "namePrefix": "ad",
                         "adminUserName": "adminUser",
-                        "adminPassword": "[replace-with-password]",
+                        "adminPassword": "P2ssw0rd1234",
                         "nics": [
                             {
                                 "subnetName": "ad",
@@ -155,7 +155,7 @@
                                         ]
                                     },
                                     "protectedSettings": {
-                                        "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File adds-replication-site.ps1 -DomainName contoso.com -AdminUser adminUser -AdminPassword [replace-with-password] -SiteName Azbb-Tutorial-Site -OnPremsiteName Default-First-Site-Name -Cidr 10.0.0.0/16 -ReplicationFrequency 10"
+                                        "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File adds-replication-site.ps1 -DomainName contoso.com -AdminUser adminUser -AdminPassword P2ssw0rd1234 -SiteName Azbb-Tutorial-Site -OnPremsiteName Default-First-Site-Name -Cidr 10.0.0.0/16 -ReplicationFrequency 10"
                                     }
                                 }
                             ]
@@ -225,7 +225,7 @@
                                         "Options": 3
                                     },
                                     "protectedSettings": {
-                                        "Password": "[replace-with-password]"
+                                        "Password": "P2ssw0rd1234"
                                     }
                                 },
                                 {
@@ -240,7 +240,7 @@
                                         ]
                                     },
                                     "protectedSettings": {
-                                        "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File adds.ps1 -AdminUser adminUser -AdminPassword [replace-with-password] -SafeModePassword Saf3M0de@PW -DomainName contoso.com -SiteName Default-First-Site-Name"
+                                        "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File adds.ps1 -AdminUser adminUser -AdminPassword P2ssw0rd1234 -SafeModePassword Saf3M0de@PW -DomainName contoso.com -SiteName Default-First-Site-Name"
                                     }
                                 }
                             ]
@@ -255,7 +255,7 @@
                         "size": "Standard_DS12_v2",
                         "computerNamePrefix": "sql",
                         "adminUsername": "adminUser",
-                        "adminPassword": "[replace-with-password]",
+                        "adminPassword": "P2ssw0rd1234",
                         "osType": "windows",
                         "imageReference": {
                             "offer": "SQL2017-WS2016",
@@ -344,7 +344,7 @@
                                     "Options": 3
                                 },
                                 "protectedSettings": {
-                                    "Password": "[replace-with-password]"
+                                    "Password": "P2ssw0rd1234"
                                 }
                             }
                         ]
@@ -376,17 +376,17 @@
                                             "domainName": "contoso.com",
                                             "Admincreds": {
                                                 "userName": "adminUser",
-                                                "password": "[replace-with-password]"
+                                                "password": "P2ssw0rd1234"
                                             },
                                             "sqlServiceCreds": {
                                                 "userName": "sqlservicetestuser",
-                                                "password": "[replace-with-sql-password]"
+                                                "password": "P2ssw0rd1234"
                                             },
                                             "ClusterName": "AOCluster",
                                             "ClusterOwnerNode": "sql1",
                                             "ClusterIP": "10.0.3.30",
-                                            "witnessStorageBlobEndPoint": "https://[replace-with-storageaccountname].blob.core.windows.net",
-                                            "witnessStorageAccountKey": "[replace-with-storagekey]"
+                                            "witnessStorageBlobEndPoint": "https://sauksprd1.blob.core.windows.net",
+                                            "witnessStorageAccountKey": "g9WoZh7/yD1G/NPqkViFNLmNXzz3k892qAbRNd3B2TT7q2C56zK1vJ13y0+N52lskJRmfGm8ReEqustqneUnwA=="
                                         }
                                     }
                                 }
@@ -420,17 +420,17 @@
                                             "domainName": "contoso.com",
                                             "Admincreds": {
                                                 "userName": "adminUser",
-                                                "password": "[replace-with-password]"
+                                                "password": "P2ssw0rd1234"
                                             },
                                             "sqlServiceCreds": {
                                                 "userName": "sqlservicetestuser",
-                                                "password": "[replace-with-sql-password]"
+                                                "password": "P2ssw0rd1234"
                                             },
                                             "ClusterName": "AOCluster",
                                             "ClusterOwnerNode": "sql1",
                                             "ClusterIP": "10.0.3.30",
-                                            "witnessStorageBlobEndPoint": "https://[replace-with-storageaccountname].blob.core.windows.net",
-                                            "witnessStorageAccountKey": "[replace-with-storagekey]"
+                                            "witnessStorageBlobEndPoint": "https://sauksprd1.blob.core.windows.net",
+                                            "witnessStorageAccountKey": "g9WoZh7/yD1G/NPqkViFNLmNXzz3k892qAbRNd3B2TT7q2C56zK1vJ13y0+N52lskJRmfGm8ReEqustqneUnwA=="
                                         }
                                     }
                                 }
@@ -464,17 +464,17 @@
                                             "domainName": "contoso.com",
                                             "Admincreds": {
                                                 "userName": "adminUser",
-                                                "password": "[replace-with-password]"
+                                                "password": "P2ssw0rd1234"
                                             },
                                             "sqlServiceCreds": {
                                                 "userName": "sqlservicetestuser",
-                                                "password": "[replace-with-sql-password]"
+                                                "password": "P2ssw0rd1234"
                                             },
                                             "ClusterName": "AOCluster",
                                             "ClusterOwnerNode": "sql1",
                                             "ClusterIP": "10.0.3.30",
-                                            "witnessStorageBlobEndPoint": "https://[replace-with-storageaccountname].blob.core.windows.net",
-                                            "witnessStorageAccountKey": "[replace-with-storagekey]"
+                                            "witnessStorageBlobEndPoint": "https://sauksprd1.blob.core.windows.net",
+                                            "witnessStorageAccountKey": "g9WoZh7/yD1G/NPqkViFNLmNXzz3k892qAbRNd3B2TT7q2C56zK1vJ13y0+N52lskJRmfGm8ReEqustqneUnwA=="
                                         }
                                     }
                                 }                            
@@ -490,7 +490,7 @@
                         "size": "Standard_DS1_v2",
                         "computerNamePrefix": "web",
                         "adminUsername": "adminUser",
-                        "adminPassword": "[replace-with-password]",
+                        "adminPassword": "P2ssw0rd1234",
                         "virtualNetwork": {
                             "name": "ra-ntier-vnet"
                         },
@@ -520,7 +520,7 @@
                                     "Options": 3
                                 },
                                 "protectedSettings": {
-                                    "Password": "[replace-with-password]"
+                                    "Password": "P2ssw0rd1234"
                                 }
                             },
                             {
@@ -618,7 +618,7 @@
                         "size": "Standard_DS1_v2",
                         "computerNamePrefix": "biz",
                         "adminUsername": "adminUser",
-                        "adminPassword": "[replace-with-password]",
+                        "adminPassword": "P2ssw0rd1234",
                         "virtualNetwork": {
                             "name": "ra-ntier-vnet"
                         },
@@ -650,7 +650,7 @@
                                     "Options": 3
                                 },
                                 "protectedSettings": {
-                                    "Password": "[replace-with-password]"
+                                    "Password": "P2ssw0rd1234"
                                 }
                             },
                             {
