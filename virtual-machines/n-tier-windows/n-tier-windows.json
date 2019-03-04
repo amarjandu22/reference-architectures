@@ -380,7 +380,7 @@
                                             },
                                             "sqlServiceCreds": {
                                                 "userName": "sqlservicetestuser",
-                                                "password": "P2ssw0rd1234"
+                                                "password": "Copy12345"
                                             },
                                             "ClusterName": "AOCluster",
                                             "ClusterOwnerNode": "sql1",
@@ -424,7 +424,7 @@
                                             },
                                             "sqlServiceCreds": {
                                                 "userName": "sqlservicetestuser",
-                                                "password": "P2ssw0rd1234"
+                                                "password": "Copy12345"
                                             },
                                             "ClusterName": "AOCluster",
                                             "ClusterOwnerNode": "sql1",
@@ -468,7 +468,7 @@
                                             },
                                             "sqlServiceCreds": {
                                                 "userName": "sqlservicetestuser",
-                                                "password": "P2ssw0rd1234"
+                                                "password": "Copy12345"
                                             },
                                             "ClusterName": "AOCluster",
                                             "ClusterOwnerNode": "sql1",
